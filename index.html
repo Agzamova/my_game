@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container game">
+        <h1 class="game__header"></h1>
+        <table class="game__table"></table>
+        <p class="game__count">Счет </p>
+        <button class="next">Следующий раунд</button>
+    </div>
+
+
+    <div class="overlay">
+		<div class="overlay__wrapper">
+			<div class="popup">
+                <div class="question">
+                    <p class="popup__content"></p>
+                    <div class="popup__btns">
+                        <button class="popup__btn popup__btn-yes">Да</button>
+                        <button class="popup__btn popup__btn-no">Нет</button>
+                    </div>
+                </div>
+                <div class="answer">
+                    <p class="popup__content"></p>
+                    <div class="popup__btns">
+                        <button class="popup__btn popup__btn-ok">Ok</button>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="data.js"></script>
+</body>
+</html>

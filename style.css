@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    background-color: #1d1e22;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.game__title {
+    font-size: 40px;
+}
+
+.game__table {
+    width: 100%;
+    font-size: 30px;
+    border-collapse: collapse;
+}
+
+th {
+    min-width: 250px;
+    height: 100px;
+    border: 1px solid #fff;
+}
+
+td {
+    min-width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.game__count {
+    font-size: 40px;
+}
+
+.next {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.overlay__wrapper {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ff719f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -5px #3f3333
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #1d1e22;
+    color: #fff;
+}
+
+.question, .answer {
+    margin: 0;
+    padding: 0 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.question {
+    display: none;
+}
+
+.answer {
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.popup__content {
+    padding: 0 20px;
+    overflow: auto;
+}
+
+.popup__btns {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.popup__btn {
+    width: 100px;
+    padding-top: 5px;
+    color: grey;
+    font-size: 30px;
+    border: 1px solid #ff719f;
+    border-radius: 5px;
+    background-color: transparent;
+    user-select: none;
+    transition: color 1s ease;
+}
+
+.popup__btn-yes {
+    margin-right: 50px;
+}
+
+.popup__btn:hover {
+    transition: color 1s ease;
+    color: #ff719f;
+}
